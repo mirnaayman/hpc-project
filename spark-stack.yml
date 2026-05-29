@@ -1,0 +1,45 @@
+version: "3.8"
+
+
+
+services:
+
+  spark-master:
+
+    image: bitnami/spark:latest
+
+    environment:
+
+      - SPARK_MODE=master
+
+    ports:
+
+      - "8080:8080"
+
+    deploy:
+
+      placement:
+
+        constraints: [node.role == manager]
+
+
+
+  spark-worker:
+
+    image: bitnami/spark:latest
+
+    environment:
+
+      - SPARK_MODE=worker
+
+      - SPARK_MASTER_URL=spark://spark-master:7077
+
+    depends_on:
+
+      - spark-master
+
+    deploy:
+
+      replicas: 2
+
+

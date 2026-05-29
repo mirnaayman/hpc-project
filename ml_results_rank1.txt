@@ -1,0 +1,2 @@
+[Rank 1] Accuracy: 1.00
+Trained on 21 samples, Tested on 6 samples
