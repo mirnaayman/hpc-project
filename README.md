@@ -137,7 +137,10 @@ project_hpc_hybrid_cluster/
 ## Author
 
 * **Mirna Ayman 221001980**
-
+* **Malak Reda 231001933**
+* **Abdallah Mohamed 231002006**
+* **Sama saeed 221002117**
+* **Haneen Mohamed 221000582**
 ## License
 
 This project is developed for educational purposes as part of the CBIO312: High Performance Computing course under Dr. Mohamed El-Sayeh, Spring 2025.
